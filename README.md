@@ -13,7 +13,7 @@ The next step in the data analysis is to reduce the dimensions of the dataset us
 Next, the cryptocurrencies were clustered using a K-means algorithm. The purpose of this model is to find groups within a dataset that have not been labeled already in the dataset (unsupervised). When the model is initialized, the number of clusters must be preset. To find the best value for the number of clusters (K), an elbow curve using hvplot was created from the PCA data frame. Where the elbow occurs is usually the threshold for the clustering the majority of variances in the dataset. The "elbow" curves at four so this will be the cluster number for this dataset. 
 
 ![Elbow_curve.png](/Resources/Elbow_curve.png)
-<p align="center">Figure 1: Elbow curve to find the ideal cluster number for the PCA data frame</p>
+*<p align="center">Figure 1: Elbow curve to find the ideal cluster number for the PCA data frame</p>*
 
 Finally, the model is initialized, fit, and run. The output of the K-means unsupervised model gives predictions for which cluster each cryptocurrency is the best fit. These predictions are called the "Class" and are added to the main data frame.
 
