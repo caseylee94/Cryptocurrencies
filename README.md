@@ -10,7 +10,7 @@ To process the data using Python, the csv file was loaded into a Jupyter Noteboo
 
 The next step in the data analysis is to reduce the dimensions of the dataset using Principal Component Analysis, or PCA. The purpose of PCA is to reduce a large dataset into a smaller, simpler dataset while still preserving as much information as possible. This will allow the data exploration in the machine learning model to run efficiently without extraneous variables to process. The accuracy of the model could be slightly reduced using PCA rather than the original dataset, but it is a fair trade for a more efficient model when using large datasets. In this analysis, the Python library sklearn is used to import a PCA model and apply it to the dataset using three principal components. These PCA results are then saved in a new data frame.
 
-![pca_df.png](/Resources/pca_df.png)
+![pca_df.png](/Resources/pca_df.png | width=50)
 *Figure 1: PCA data frame*
 
 Next, the cryptocurrencies were clustered using a K-means algorithm. The purpose of this model is to find groups within a dataset that have not been labeled already in the dataset (unsupervised). When the model is initialized, the number of clusters must be preset. To find the best value for the number of clusters (K), an elbow curve using hvplot was created from the PCA data frame. Where the elbow occurs is usually the threshold for the clustering the majority of variances in the dataset. The "elbow" curves at four so this will be the cluster number for this dataset. 
