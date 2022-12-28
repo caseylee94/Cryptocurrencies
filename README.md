@@ -25,7 +25,7 @@ All of these numbers and changes to the dataset can make it hard to follow what 
 Next, an interactive table with all the tradable cryptocurrencies is created also using hvplot. Each column name can be selected to sort the data frame, allowing the user to look at whichever metrics that they are most interested in. In the image shown below, it is sorted by the "Coin Name" column in alphabetical order.
 
 ![hvdataframe.png](/Resources/hvdataframe.png)
-*Figure 3: Table with cleaned data and cluster number*
+<p align="center">*Figure 3: Table with cleaned data and cluster number*</p>
 
 The final visualization created is a 2D scatterplot of the scaled "Total Coins Mined" and "Total Coin Supply" columns with the "Coin Name" added as a hover metric, allowing the user to identify each data point. The one data point that is in class two is shown as an even more extreme outlier in this plot! 
 
